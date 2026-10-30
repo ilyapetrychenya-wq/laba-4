@@ -5,8 +5,9 @@ int main()
     setlocale(LC_ALL, "Russian");
     int m, dp = 0, mest = 0, b=0;
     cout <<  "Введите масссы багажа ";
-    while (cin >> m, m != -1)
+    while (m != -1)
     {
+        cin >> m
         if (m < 0 || m>50)
         {
             cout << "\nОшибка ввода \n";
