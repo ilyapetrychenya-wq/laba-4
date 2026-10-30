@@ -12,8 +12,10 @@ int main()
     for (int i = 1; i <= n; ++i)
     {
         cin >> t;
-        if (n < -10 || n > 180)
+        if (t < -10 || t > 180) {
             cout << "Ошибка ввода";
+            return 1;
+        }
         if (t > 0)
         {
             col++;
