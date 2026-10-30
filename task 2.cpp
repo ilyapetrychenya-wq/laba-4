@@ -5,9 +5,9 @@ int main()
     setlocale(LC_ALL, "Russian");
     int m, dp = 0, mest = 0, b=0;
     cout <<  "Введите масссы багажа ";
+    cin >> m;
     while (m != -1)
     {
-        cin >> m
         if (m < 0 || m>50)
         {
             cout << "\nОшибка ввода \n";
@@ -20,6 +20,7 @@ int main()
         }
         if (m > b)
             b = m;
+        cin >> m;
     }
     cout << "\nобщий сбор: " << dp << "\n Количество мест с доплатой: " << mest << "\nНаибольшая доплата за место: " << (b-20)*4;
 }
